@@ -3,7 +3,7 @@ const productId = urlParams.get('id');
 
 console.log('Product ID:', productId); // Verificar o ID do produto
 
-const apiUrl = `http://localhost:1337/api/products?filters[id]=${productId}&populate=*`;
+const apiUrl = `https://marketmp-production.up.railway.app/api/products?filters[id]=${productId}&populate=*`;
 
 async function fetchProductDetails() {
   try {
@@ -36,7 +36,7 @@ async function fetchProductDetails() {
 
     // Valida imagem
     const fullImageUrl = imageUrl
-      ? `http://localhost:1337${imageUrl}`
+      ? `https://marketmp-production.up.railway.app${imageUrl}`
       : 'https://via.placeholder.com/200';
 
     // Preenche os elementos HTML

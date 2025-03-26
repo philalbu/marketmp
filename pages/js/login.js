@@ -4,7 +4,7 @@ form.addEventListener("submit", async (e) => {
   const identifier = document.getElementById("identifier").value;
   const password = document.getElementById("password").value;
 
-  const response = await fetch("http://localhost:1337/api/auth/local", {
+  const response = await fetch("https://marketmp-production.up.railway.app/api/auth/local", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ identifier, password }),
