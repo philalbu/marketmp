@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!---------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="/css/app.css" />
+
+    <!---------------------------- TAILWIND ---------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+  </head>
+  <body>
+    <!-- register.html -->
+    <section class="container-lg m-auto">
+      <form
+        class="flex items-center flex-col justify-center gap-[8px] h-screen"
+        id="registerForm"
+      >
+        <input type="text" id="username" placeholder="Nome" />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Senha" />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <script src="/pages/js/register.js"></script>
+  </body>
+</html>

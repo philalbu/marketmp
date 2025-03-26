@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Produto</title>
+
+    <!----------------------------
+        TAILWIND
+    ---------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+
+    <!----------------------------
+        CSS
+    ---------------------------->
+    <link rel="stylesheet" href="/css/app.css" />
+  </head>
+  <body>
+    <section class="container-lg mb-6">
+      <h1 class="text-[32px]">Detalhes do produto</h1>
+    </section>
+    <section class="container-lg" id="product-details" class="p-4">
+      <h2 id="detail-title" class="text-2xl font-bold mb-2"></h2>
+      <img id="detail-image" class="w-48 h-48 object-cover mb-4" />
+      <p id="detail-price" class="text-lg text-green-600 font-semibold"></p>
+      <p id="detail-stock" class="text-lg text-green-600 font-semibold"></p>
+    </section>
+    <button
+      id="buy-button"
+      class="mt-4 py-2 px-4 bg-blue-600 text-white rounded-full hover:bg-blue-700"
+    >
+      Comprar
+    </button>
+
+    <script src="/pages/js/product-details.js"></script>
+  </body>
+</html>

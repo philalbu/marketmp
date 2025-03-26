@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!---------------------------- TAILWIND ---------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/tailwind.js"></script>
+
+    <!---------------------------- CSS ---------------------------->
+    <link rel="stylesheet" href="../css/app.css" />
+  </head>
+  <body>
+    <!-- login.html -->
+    <section class="container-lg m-auto">
+      <form
+        class="flex items-center flex-col justify-center gap-[8px] h-screen"
+        id="loginForm"
+      >
+        <input type="email" id="identifier" placeholder="Email ou usuário" />
+        <input type="password" id="password" placeholder="Senha" />
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <script src="/pages/js/login.js"></script>
+  </body>
+</html>
