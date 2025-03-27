@@ -25,7 +25,6 @@ import path from 'path';
 //     },
 //   };
 // };
-
 module.exports = ({ env }) => ({
   connection: {
     client: 'mysql',
@@ -35,7 +34,7 @@ module.exports = ({ env }) => ({
       database: env('DATABASE_NAME', 'railway'),
       user: env('DATABASE_USERNAME', 'root'),
       password: env('DATABASE_PASSWORD', 'jBcqQunmUfDdVtVTciWLwOxQpkSpJFTr'),
-      ssl: env.bool('DATABASE_SSL', false),
+      ssl: env.bool('DATABASE_SSL', false) ? { rejectUnauthorized: false } : false, // Correção aqui
     },
   },
 });
